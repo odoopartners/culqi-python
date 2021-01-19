@@ -13,6 +13,7 @@ from culqipy.resource import (
 from culqipy.utils import Util
 
 # Configuration variables.
+API_TOKEN = 'https://secure.culqi.com/v2'
 API_URL = "https://api.culqi.com/v2"
 public_key = None
 secret_key = None

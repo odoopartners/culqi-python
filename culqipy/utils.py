@@ -13,7 +13,11 @@ class Util:
         public key in case we want to create a token.
         """
 
-        self.url = culqipy.API_URL + url
+        # self.url = culqipy.API_URL + url
+        if url == '/tokens/':
+            self.url = culqipy.API_TOKEN + url
+        else:
+            self.url = culqipy.API_URL + url
         # Validating the method.
         self.method = method.upper()
         if self.method not in ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']:
